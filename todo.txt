@@ -1,0 +1,6 @@
+1.  Introduce Model and Collection classes to replace direct ajax calls.
+2.  Convert the Views to render Models.
+3.  Typeahead:
+    a.  fix buggy behavior
+    b.  throttle the ajax calls
+    c.  change the result render to display icons in addition to text
