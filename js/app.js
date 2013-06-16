@@ -50,7 +50,8 @@ var App = (function() {
 
     return {
         initialize: initialize,
-        REST_URL: 'tmdbapi.php',
-        SITE_ROOT: '/~rick/moviedbsearch'
+        REST_URL: 'TmdbApi.php',
+        //SITE_ROOT: '/~rick/moviedbsearch'
+        SITE_ROOT: '/'
     }
 })();
