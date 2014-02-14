@@ -72,6 +72,7 @@
                 $map = $this->movieDetails($popMovies[$i]);
                 $details = $map['details'];
                 $backdropImageUrl = $this->tmdb->getImageUrl($details['backdrop_path'], TMDb::IMAGE_BACKDROP, 'w1280');
+				
                 $images = array('backdrop' => $backdropImageUrl);
                 $map['images'] = $images;
                 array_push($results, $map);
