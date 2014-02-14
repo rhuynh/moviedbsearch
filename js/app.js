@@ -42,7 +42,6 @@ var App = (function() {
             updater: function(itemLabel) {
                 var item = labelToSearchResultMap.actors[itemLabel] || labelToSearchResultMap.movies[itemLabel];
                 var isActorItem = !!labelToSearchResultMap.actors[itemLabel];
-                //isActorItem ? getActorDetails(item) : getMovieDetails(item);
                 AppRouter.navigate((isActorItem ? 'actor/' : 'movie/') + item.id, true);
             }
         });
@@ -51,7 +50,6 @@ var App = (function() {
     return {
         initialize: initialize,
         REST_URL: 'TmdbApi.php',
-        //SITE_ROOT: '/~rick/moviedbsearch'
         SITE_ROOT: '/'
     }
 })();
